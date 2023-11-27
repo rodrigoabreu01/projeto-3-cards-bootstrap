@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --corlaranga: hsl(31, 77%, 52%);
+    --corcyan: hsl(184, 100%, 22%);
+    --cordarkcyan: hsl(179, 100%, 13%);
+    --corparagrafo: hsla(0, 0%, 100%, 0.75);
+    --corbotoes:hsl(0, 0%, 95%);
+}
+*{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+p{
+    color: var(--corparagrafo);
+    font-size: 15px;
+}
+.coluna1, .coluna2, .coluna3 h3{
+    color: var(--corbotoes);
+}
+.coluna1 .card-body a{
+    color:var(--corlaranga)
+}
+.coluna2 .card-body a{
+    color:var(--corcyan)
+}
+.coluna3 .card-body a{
+    color:var(--cordarkcyan)
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.coluna1{
+    background-color: var(--corlaranga);
+    border-radius: 10px 0px 0px 10px;
+}
+.coluna2{
+    background-color: var(--corcyan);
+    border-radius: 0px;
+}
+.coluna3{
+    background-color: var(--cordarkcyan);
+    border-radius: 0px 10px 10px 0px;
+}
